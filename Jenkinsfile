@@ -17,14 +17,14 @@ pipeline {
         
         stage('Deploy') {
             steps {
-                echo 'Deployment'
+                ec 'Deployment'
             }
         }
     }
     
     post {
         failure {
-            ec 'Pipeline failed'
+            echo 'Pipeline failed'
         }
     }
 }
