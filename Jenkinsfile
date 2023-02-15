@@ -11,14 +11,12 @@ pipeline {
         
         stage('Test') {
             steps {
-                 './pipeline_file_PES1UG20CS054'
+                sh './pipeline_file_PES1UG20CS054'
             }
         }
         
         stage('Deploy') {
-            steps {
-                echo 'Deployment'
-            }
+           
         }
     }
     
